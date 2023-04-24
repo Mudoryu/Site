@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <script>
+/*let min=+prompt("Введіть мінімальне число діапазону",0);
+let max=+prompt("Введіть максимельне число діапазону",100);
+for ( let count = min; count <= max; count++){
+    if(count%2==0)
+    document.writeln(count)
+}
+let num
+do {
+    num=prompt("Введіть число більше за 100?", 0);
+    while (num <= && num!=null);
+    if (num===null){
+      alert("до побачення!")
+    }
+}*/
+let min=+prompt ('min number',0)
+let max=+prompt ('max number',100) 
+let counter=1;
+let numUser; 
+let numX=Math.round(min+Math.random()*(max-min));
+ do { numUser = prompt("вгадайте число від " +min+  " до " +max , 0); 
+counter++;
+if (numUser===null) { 
+alert("Ми чекали від Вас число");
+} else if (+numUser<numX) { 
+alert("Ваше число менше"); 
+} else if (+numUser>numX){
+alert("Ваше число більше"); 
+} else if(+numUser==numX){ 
+alert("Ура!!! Вгадали!!! Це було число: "+numX+" кількість спроб: "+counter); } 
+else{
+    alert("Ви ввели не число!")
+}
+} while (numUser != numX && numUser != null);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
