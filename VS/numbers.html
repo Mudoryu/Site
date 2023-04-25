@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кількість цифр</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body{
+        background-color: #6c8e9ec2;
+        font-size: 30px;
+        font-family: 'Press Start 2P', cursive;
+
+    }
+</style>
+</head>
+<body>
+    <script>
+        let number = prompt("Введіть цифри");
+            while(isNaN(number)) {
+            number=prompt("Це NaN - не цифри, введіть цифри! ")
+        } 
+            document.write("В числі "+number+" кількість цифр: "+number.length)
+        for (i=0; i<number.length; i++){
+            document.write("<br>"+number[i])
+        }
+    </script>
+</body>
+</html>
