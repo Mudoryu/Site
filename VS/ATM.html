@@ -7,21 +7,21 @@
     <title>ATM</title>
     <style>
         body{
-            font-size: 80px;
-            color: rgb(0,0,0);
-        }
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+            
     </style>
 </head>
-<body style="background-color: blueviolet;">
+<body style="background-color: rgb(0, 0, 0);">
     <script>
      
 let money = +prompt("Яку сумму хочете зняти", "")
 if (money % 10){
-    alert("На жаль я не можу видати купюру номіналом 1,2,5 гривень тільки від 10 і більше")
+    alert("Попередження: я не можу видати купюру номіналом 1,2,5 гривень тільки від 10 і більше. Перевірте щоб сума грошей була від 50 до 3000 гривень ")
 }else if(money < 50 || money > 3000){
     alert("На жаль, ви не можете зняти гроші на суму менше 50 і більше 3000.","")
 }else {
-    alert ("Заберіть гроші " +money+ " гривень")
+    alert("Заберіть гроші " +money+ " гривень")
 }
 
 
