@@ -17,9 +17,9 @@
 </head>
 <body>
     <script>
-        let number = prompt("Введіть цифри");
+        let number = prompt("Введіть число, щоб дізнатися скільки цифр в ньому");
             while(isNaN(number)) {
-            number=prompt("Це NaN - не цифри, введіть цифри! ")
+            number=prompt("Це NaN - не число, введіть число! ")
         } 
             document.write("В числі "+number+" кількість цифр: "+number.length)
         for (i=0; i<number.length; i++){
